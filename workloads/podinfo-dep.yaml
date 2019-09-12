@@ -10,6 +10,7 @@ metadata:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.init: regex:^3.10.*
     flux.weave.works/tag.podinfod: semver:~2.1
+    reloader.stakater.com/auto: "true"
 spec:
   strategy:
     rollingUpdate:
@@ -49,7 +50,7 @@ spec:
         - name: PODINFO_UI_MESSAGE
           valueFrom:
             configMapKeyRef:
-              name: podinfo-ui-message
+              name: podinfo-configmap
               key: PODINFO_UI_MESSAGE
         livenessProbe:
           httpGet:

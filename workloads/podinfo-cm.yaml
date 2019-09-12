@@ -4,5 +4,6 @@ data:
   PODINFO_UI_MESSAGE: Welcome to FluxCD
 kind: ConfigMap
 metadata:
-  name: podinfo-ui-message
+  name: podinfo-configmap
   namespace: demo
+    
